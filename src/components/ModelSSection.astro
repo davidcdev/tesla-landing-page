@@ -1,0 +1,35 @@
+---
+import Section from "./Section.astro";
+
+---
+
+<Section
+title="Model S"
+link="Explore Inventory"
+color="black"
+>
+  <div 
+    slot="footer" 
+    class="gap-x-6 flex mx-auto items-center"
+  >
+    <a 
+      class="rounded px-[46px] py-2.5 w-[260px] h-10 bg-white text-black text-sm inline-block bg-opacity-60" 
+      href="#"
+    >
+      Custom Order
+    </a>
+    <a 
+      class="rounded px-[46px] py-2.5 w-[260px] h-10 bg-black text-white text-sm inline-block bg-opacity-60" 
+      href="#"
+    >
+      Demo Drive
+    </a>
+  </div>
+  
+  <img 
+    slot="background" 
+    src="../../public/model-s.avif" 
+    alt="Model S"
+    class="object-cover h-screen w-screen"
+  />
+</Section>
